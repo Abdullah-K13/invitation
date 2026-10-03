@@ -68,17 +68,7 @@ const ThingsToKnow = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full overflow-hidden">
-      {/* Background image for the section */}
-      <div className="absolute inset-0">
-        <img
-          src={weddingData.images.section3Bg}
-          alt="Section Background"
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
-
+    <section ref={sectionRef} className="relative w-full overflow-hidden backdrop-blur-sm" style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }}>
       {/* Vintage Car Divider at Top */}
       <div className="relative z-10 flex justify-center pt-8 md:pt-12">
         <div className="w-48 h-36 md:w-64 md:h-48">

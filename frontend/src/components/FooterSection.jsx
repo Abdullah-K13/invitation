@@ -49,25 +49,9 @@ const FooterSection = () => {
     <section
       ref={sectionRef}
       id="bride-and-groom-1"
-      className="relative w-full overflow-hidden"
-      style={{ minHeight: '85vh' }}
+      className="relative w-full overflow-hidden backdrop-blur-sm"
+      style={{ minHeight: '85vh', backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
     >
-      {/* Background Image - Night Palace */}
-      <div className="absolute inset-0">
-        <img
-          src={weddingData.images.footerBg}
-          alt="Night Palace"
-          className="w-full h-full object-cover object-bottom"
-          loading="lazy"
-        />
-      </div>
-
-      {/* Dark overlay */}
-      <div
-        className="absolute inset-0"
-        style={{ backgroundColor: 'rgba(10, 5, 0, 0.2)' }}
-      />
-
       <div className="relative z-10 flex flex-col items-center justify-center min-h-[85vh] px-4 py-16">
         {/* Crescent Moon / Star Decoration */}
         <div

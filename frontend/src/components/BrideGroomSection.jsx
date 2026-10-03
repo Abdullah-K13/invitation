@@ -49,33 +49,12 @@ const BrideGroomSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden backdrop-blur-sm"
       style={{
-        background: 'linear-gradient(180deg, #c9a0b8 0%, #d4adc5 30%, #dbb8cf 60%, #d4adc5 100%)',
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
         minHeight: '100vh'
       }}
     >
-      {/* Textured overlay */}
-      <div
-        className="absolute inset-0"
-        style={{ opacity: 0.06 }}
-      >
-        <svg width="100%" height="100%" className="w-full h-full">
-          <defs>
-            <pattern id="floralPink" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-              <circle cx="100" cy="100" r="50" fill="none" stroke="#8a4070" strokeWidth="0.5" />
-              <circle cx="100" cy="100" r="30" fill="none" stroke="#8a4070" strokeWidth="0.3" />
-              <path d="M60,100 Q80,65 100,55 Q120,65 140,100 Q120,135 100,145 Q80,135 60,100Z" fill="none" stroke="#8a4070" strokeWidth="0.5" />
-              <circle cx="0" cy="0" r="35" fill="none" stroke="#8a4070" strokeWidth="0.3" />
-              <circle cx="200" cy="0" r="35" fill="none" stroke="#8a4070" strokeWidth="0.3" />
-              <circle cx="0" cy="200" r="35" fill="none" stroke="#8a4070" strokeWidth="0.3" />
-              <circle cx="200" cy="200" r="35" fill="none" stroke="#8a4070" strokeWidth="0.3" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#floralPink)" />
-        </svg>
-      </div>
-
       <div className="relative z-10 py-16 md:py-24 px-4">
         {/* Meet the Bride and Groom */}
         <div

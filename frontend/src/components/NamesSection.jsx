@@ -27,19 +27,8 @@ const NamesSection = () => {
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden"
-      style={{
-        minHeight: '100vh',
-        background: 'linear-gradient(180deg, #3d6b6e 0%, #4a7d7a 50%, #5a8f8a 100%)'
-      }}
+      style={{ minHeight: '100vh' }}
     >
-      {/* Background - painted sky with lanterns */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: 'linear-gradient(180deg, #5b85a8 0%, #7ba0bf 30%, #a0bdd4 60%, #c5d6e3 100%)'
-        }}
-      />
-
       {/* Damask overlay */}
       <div className="absolute inset-0 damask-overlay" />
 

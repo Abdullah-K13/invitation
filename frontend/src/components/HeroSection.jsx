@@ -40,22 +40,6 @@ const HeroSection = () => {
       className="relative w-full overflow-hidden"
       style={{ minHeight: '100vh' }}
     >
-      {/* Background Image - Mughal Haveli Courtyard */}
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src={weddingData.images.heroBg}
-          alt="Mughal Courtyard"
-          className="w-full h-full object-cover object-top"
-          style={{ minHeight: '100vh' }}
-        />
-      </div>
-
-      {/* Dark overlay for readability */}
-      <div
-        className="absolute inset-0"
-        style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.15) 100%)' }}
-      />
-
       {/* Floating Lanterns */}
       <Lantern size="lg" className="lantern" style={{ top: '3%', left: '3%', '--rotation': '7deg' }} />
       <Lantern size="md" className="lantern-alt" style={{ top: '10%', left: '12%', '--rotation': '-8deg' }} />

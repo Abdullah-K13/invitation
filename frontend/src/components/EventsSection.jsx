@@ -138,9 +138,9 @@ const EventsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full overflow-hidden py-16 md:py-24"
+      className="relative w-full overflow-hidden py-16 md:py-24 backdrop-blur-[2px]"
       style={{
-        background: 'linear-gradient(180deg, #4a7d7a 0%, #5a8f8a 50%, #4a7d7a 100%)'
+        backgroundColor: 'rgba(0, 0, 0, 0.15)'
       }}
     >
       {/* Damask pattern overlay */}

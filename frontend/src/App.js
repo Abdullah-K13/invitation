@@ -9,10 +9,21 @@ import RSVPSection from './components/RSVPSection';
 import ThingsToKnow from './components/ThingsToKnow';
 import FooterSection from './components/FooterSection';
 import MusicPlayer from './components/MusicPlayer';
+import { weddingData } from './data/mockData';
 
 const WeddingInvitation = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto relative" style={{ boxShadow: '0 0 60px rgba(0,0,0,0.4)' }}>
+    <div 
+      className="w-full max-w-[1400px] mx-auto relative bg-black" 
+      style={{ 
+        boxShadow: '0 0 60px rgba(0,0,0,0.4)',
+        backgroundImage: `url(${weddingData.images.heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'scroll'
+      }}
+    >
       <MusicPlayer />
       <HeroSection />
       <NamesSection />
